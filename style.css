@@ -91,9 +91,6 @@ header {
 }
 
 main {
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 20px;
   background-color: #DCFCE7;
 }
 
@@ -101,8 +98,16 @@ main p {
   font-weight: 400;
 }
 
-.main-panel {
-  
+.hero-img {
+  height: 40vh;
+  width: 100%;
+  background: url('images/joel-holland-TRhGEGdw-YY-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-projects {
@@ -112,11 +117,11 @@ main p {
 
 .main-projects-title {
   font-weight: 700;
+  padding: 16px;
 }
 
 .main-projects-panel {
   margin: 10px;
-  margin-left: 0;
   border-left: 8px solid #16A34A;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -171,12 +176,13 @@ padding: 0;
 }
 
 footer {
-  position: relative;
   background-color: white;
   padding: 10px;
   text-align: center;
   font-size: .85rem;
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer a {
