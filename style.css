@@ -7,7 +7,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
@@ -98,7 +98,7 @@ main p {
   font-weight: 400;
 }
 
-.hero-img {
+.hero {
   height: 40vh;
   width: 100%;
   background: url('images/joel-holland-TRhGEGdw-YY-unsplash.jpg');
@@ -106,8 +106,18 @@ main p {
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+}
+
+.hero-text {
+  color:white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  margin: 32px;
+  border-radius: 8px;
+  font-size: 3rem;
 }
 
 .main-projects {
@@ -190,6 +200,18 @@ footer a {
 }
 footer a:hover {
   color: #292929;
+}
+
+.about {
+  background-color: white;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px;
+}
+
+.headshot img {
+  border-radius: 16px;
 }
 
 @media (max-width: 700px) {
