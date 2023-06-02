@@ -51,45 +51,6 @@ header {
   padding: 8px;
 }
 
-.user-avatar-small {
-  width: 35px;
-  border-radius: 16px;
-}
-
-.user-avatar-med {
-  width: 55px;
-  padding: 8px;
-  border-radius: 32px;
-}
-
-.header-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 280px;
-  margin-top: 15px;
-  gap: 8px;
-  justify-self: end;
-}
-
-.headerbtn {
-  border-radius: 100px;
-  background-color:#16A34A;
-  color: white;
-  padding: 5px 6px 7px 6px;
-  width: 78px;
-  border: 1px solid #16A34A;
-  font-size: .8rem;
-  transition: .5s ease;
-  cursor: pointer;
-}
-
-.headerbtn:hover {
-  background-color: #DCFCE7;
-  border-color: #DCFCE7;
-  color:#16A34A;
-  font-weight: 600;
-}
-
 main {
   background-color: #DCFCE7;
 }
@@ -122,7 +83,7 @@ main p {
 
 .main-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .main-projects-title {
@@ -136,53 +97,29 @@ main p {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: white;
-  justify-content: space-between;
-  align-items: start;
-  padding: 20px;
+  padding: 16px;
   padding-bottom: 15px;
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-}
-
-.projects-p {
-  font-size: 14px;
-}
-
-.main-projects-panel h4 {
-  font-size: .9rem;
-  margin-bottom: 1px;
-}
-
-.share {
-  display: inline-block;
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-.project-icons {
-  margin-top: 10px;
-  font-weight: 500;
-  justify-content: flex-end;
   display: flex;
+  flex-direction: column;
+}
+
+.projects-panel-text h4 {
+  padding-bottom: 8px;
 }
 
 .project-icon {
-  margin-left: 20px;
-  font-size: 1.2rem;
+  display: flex;
+  justify-content: end;
+  margin-top: auto;
 }
 
-.username {
-font-size: .8rem;
-margin: 0;
-font-weight: 700;
-padding: 0;
+.project-icon img {
+  max-width: 2rem;
 }
 
-.appname {
-  margin: 0;
-  padding: 0;
-  font-size: .8rem;
-  color: grey;
+.projects-p {
+  line-height: 1.5rem;
+  padding-bottom: 8px;
 }
 
 footer {
@@ -283,6 +220,10 @@ footer a:hover {
 
 .bio h2 {
   padding: 8px 0;
+}
+
+footer img {
+  max-width: 2.5rem;
 }
 
 @media (max-width: 700px) {
