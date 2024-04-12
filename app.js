@@ -20,8 +20,7 @@ library.forEach((project) => {
   screenshot.src = project.img;
   screenshot.className = "screenshot";
   p.class = "projects-p";
-  p.innerText =
-    "Form validation using Javascript and Constraint Validation API";
+  p.innerText = project.descripton;
   projectsPanelText.appendChild(h4);
   projectsPanelText.appendChild(screenshot);
   projectsPanelText.appendChild(p);
