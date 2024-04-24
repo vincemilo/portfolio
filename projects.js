@@ -15,6 +15,13 @@ export default function projects() {
     "https://github.com/vincemilo/weatherApp",
     "https://vincemilo.github.io/weatherApp/"
   );
-  const array = [form, weather];
+  const battleship = new Project(
+    "JavaScript - Battleship",
+    "images/battleship.png",
+    "Battleship Game using test driven development",
+    "https://github.com/vincemilo/battleshipJS",
+    "https://vincemilo.github.io/battleshipJS/"
+  );
+  const array = [form, weather, battleship];
   return array;
 }

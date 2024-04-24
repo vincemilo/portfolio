@@ -111,6 +111,7 @@ main p {
   display: flex;
   justify-content: end;
   margin-top: auto;
+  padding-top: 8px;
   gap: 8px;
 }
 
