@@ -18,10 +18,17 @@ export default function projects() {
   const battleship = new Project(
     "JavaScript - Battleship",
     "images/battleship.png",
-    "Battleship Game using test driven development",
+    "Battleship Game using test driven development (Jest)",
     "https://github.com/vincemilo/battleshipJS",
     "https://vincemilo.github.io/battleshipJS/"
   );
-  const array = [form, weather, battleship];
+  const memCard = new Project(
+    "React - Memory Card",
+    "images/memCard.png",
+    "Memory Card Game using React hooks and API fetching",
+    "https://github.com/vincemilo/memoryCard",
+    "https://vincemilomemcard.netlify.app"
+  );
+  const array = [form, weather, battleship, memCard];
   return array;
 }
