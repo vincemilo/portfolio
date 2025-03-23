@@ -29,6 +29,20 @@ export default function projects() {
     "https://github.com/vincemilo/memoryCard",
     "https://vincemilomemcard.netlify.app"
   );
-  const array = [form, weather, battleship, memCard];
+  const shoppingCart = new Project(
+    "React - Shopping Cart",
+    "images/shoppingCart.png",
+    "Shopping cart simulation using React, React Router, and API fetch. Testing via Vitest and React Testing Library",
+    "https://github.com/vincemilo/shoppingCartReact",
+    "https://vincemiloshoppingcart.netlify.app/"
+  );
+  const wheresWaldo = new Project(
+    "React + Rails - Where's Waldo",
+    "images/wheresWaldo.png",
+    "A photo tagging app using React frontend and Rails backend",
+    "https://github.com/vincemilo/wheresWaldoReact",
+    "https://vincemilowhereswaldo.netlify.app/"
+  );
+  const array = [weather, battleship, memCard, shoppingCart, wheresWaldo];
   return array;
 }
