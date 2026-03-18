@@ -1,6 +1,20 @@
 import Project from "./project.js";
 
 export default function projects() {
+  const chess = new Project(
+    "Ruby - Chess",
+    "images/ruby-chess.png",
+    "Command line chess program written in Ruby. Enforces all chess rules including castling, en passant, checkmate, draw, etc.",
+    "https://github.com/vincemilo/ruby-chess",
+    "https://replit.com/@vincemilo/rubychess"
+  );
+  const fb = new Project(
+    "Rails - Facebook Clone",
+    "images/odin-fb.png",
+    "(Mostly) fully functional Facebook app! Create user accounts, make posts, like/comment, add friends, sign in with Facebook, receive confirmation email, etc.",
+    "https://github.com/vincemilo/odin-facebook",
+    "https://odinfb.fly.dev/"
+  );
   const form = new Project(
     "JavaScript - Form Validation",
     "images/form.png",
@@ -43,6 +57,6 @@ export default function projects() {
     "https://github.com/vincemilo/wheresWaldoReact",
     "https://vincemilowhereswaldo.netlify.app/"
   );
-  const array = [weather, battleship, memCard, shoppingCart, wheresWaldo];
+  const array = [chess, fb, battleship, wheresWaldo];
   return array;
 }
